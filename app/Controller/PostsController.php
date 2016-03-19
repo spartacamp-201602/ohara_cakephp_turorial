@@ -10,4 +10,8 @@ class PostsController extends AppController {
 
     }
 
+
+    public function show($id) {
+      $this->set('post', $this->Post->findById($id));
+    }
 }
